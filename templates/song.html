@@ -1,0 +1,11 @@
+{% include "begin.html" %}
+<form action="" method="POST">
+    <p><strong>Songtext</strong></p>
+
+    {% for line in text %}
+        <p>
+            {{ line }}
+        </p>
+    {% endfor %}
+
+{% include "end.html" %}
